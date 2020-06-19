@@ -1,0 +1,29 @@
+.main
+  .main__top
+    .main__top__left
+      .main__top__left__group
+        = @group.name
+      .main__top__left__member
+        Member: 
+        - @group.users.each do |user|
+          = user.name
+    .main__top__right
+      .main__top__right__link
+        = link_to edit_group_path(@group) do
+          Edit
+
+  .main__midle
+    = render @messages
+
+  .main__bottom
+    = form_for [@group, @message] do |form|
+      .main__bottom__form
+        .main__bottom__form__area
+          = form.text_field :content, class:'main__bottom__form__area__field', placeholder:'type a message'
+          = form.label :image, class: "main__bottom__form__area__icon" do
+            = icon('fas','image')
+            = form.file_field :image
+        .main__bottom__form__btn
+          = form.submit 'Send'
+    
+
