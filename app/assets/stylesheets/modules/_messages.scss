@@ -40,6 +40,7 @@ a{
         color: $c-wh;
       }
       &__icon{
+        font-weight: 900;
         color: $c-wh;
         width: 60px;
         line-height: 20px;
@@ -155,6 +156,7 @@ a{
           top: 14px;
           right: 32px;
           & i{
+            font-weight: 900;
             position: fixed;
             z-index: 1;
             font-size: 22px;
