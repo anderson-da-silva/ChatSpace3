@@ -40,6 +40,7 @@ a{
         color: $c-wh;
       }
       &__icon{
+        content: "/f044";
         font-weight: 400;
         color: $c-wh;
         width: 60px;
@@ -156,7 +157,6 @@ a{
           top: 14px;
           right: 32px;
           & i{
-            font-weight: 400;
             position: fixed;
             z-index: 1;
             font-size: 22px;
@@ -170,20 +170,15 @@ a{
       &__btn{
         height: 50px;
         width: 100px;
+        color: $c-wh;
+        background-color: $c-sb;
         margin-right: 40px;
         line-height: 50px;
         text-align: center;
+        border-width: 2px;
+        border-style: outset;
+        border-color: #767676;
         cursor: pointer;
-        & input{
-          color: $c-wh;
-          height: 50px;
-          width: 100px;
-          background-color: $c-sb;
-          border-width: 2px;
-          border-style: outset;
-          border-color: #767676;
-          cursor: pointer;
-        }
       }
     }
   }

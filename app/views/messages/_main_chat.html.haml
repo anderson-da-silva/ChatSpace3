@@ -20,9 +20,8 @@
       .main__bottom__form
         .main__bottom__form__area
           = form.text_field :content, class:'main__bottom__form__area--field', placeholder:'type a message'
-          = form.label :image, class: "main__bottom__form__area--icon" do
-            = icon('fas','image')
+          = form.label :image, class: 'main__bottom__form__area--icon' do
+            = icon('fa','image')
             = form.file_field :image
-        .main__bottom__form__btn
-          = form.submit 'Send'
+        = form.submit 'Send' , class: 'main__bottom__form__btn'
     
